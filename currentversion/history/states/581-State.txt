@@ -1,0 +1,22 @@
+state = {
+	id = 581
+	name = "STATE_GARRISON"
+	manpower = 2000
+	state_category = pastoral
+	
+	history = {
+		owner = WHT
+		add_core_of = WHT
+		victory_points = {
+			3510 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	
+	provinces = {
+		1569 3339 3340 3391 3396 3509 3510 3566 6376 6377 6378
+	}
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 488
+	name = "STATE_INDIAN_PEAK"
+	manpower = 3000
+	state_category = rural
+	
+	resources = {
+		water = 8
+	}
+	
+	history = {
+		owner = WHT
+		add_core_of = WHT
+		victory_points = {
+			6410 5
+		}
+		buildings = {
+			infrastructure = 2
+		
+		}
+	}
+	
+	provinces = {
+		6379 6380 6381 6410 8242 8243
+	}
+}

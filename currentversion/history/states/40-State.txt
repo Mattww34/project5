@@ -1,0 +1,25 @@
+
+state={
+	id=40
+	name="STATE_GOLD_HILL"
+
+	history={
+		owner = EHT
+		add_core_of = EHT
+		victory_points = {
+			3398 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		1176 1636 1637 1638 2682 3319 3357 3398 3399 3559 3560 3561 3562 6317 8311 8312 
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

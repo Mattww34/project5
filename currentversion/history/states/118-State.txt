@@ -1,0 +1,31 @@
+state = {
+	id = 118
+	name = "STATE_DELTA"
+	manpower = 20000
+	state_category = metropolis
+	
+	resources = {
+		metal = 25
+		water = 10
+	}
+	
+	history = {
+		owner = PNT
+		add_core_of = PNT
+		victory_points = {
+			6542 30
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 4
+			6542 = {
+				naval_base = 2
+			}
+		}
+	}
+	
+	provinces = {
+		6542
+	}
+}
