@@ -1,0 +1,29 @@
+state = {
+	id = 306
+	name = "STATE_SEVIER_PLAIN"
+	manpower = 2000
+	state_category = pastoral
+	
+	resources = {
+		water = 8
+		electricity = 4
+		metal = 7
+	}
+	
+	history = {
+		owner = WHT
+		add_core_of = WHT
+		victory_points = {
+			8315 5
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		
+		}
+	}
+	
+	provinces = {
+		1059 3389 3390 6409 6532 8313 8314 8315 8316
+	}
+}

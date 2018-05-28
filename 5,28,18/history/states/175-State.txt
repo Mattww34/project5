@@ -1,0 +1,27 @@
+state = {
+	id = 175
+	name = "STATE_PAINTED_DESERT"
+	manpower = 4500
+	state_category = rural
+	
+	resources = {
+		electricity = 12
+		advanced_technology = 12
+		electronics = 12
+	}
+	
+	history = {
+		owner = CES
+		add_core_of = CES
+		victory_points = {
+			8048 5
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		983 1590 1594 1596 2637 7931 7984 8014 8046 8047 8048 8050
+	}
+}

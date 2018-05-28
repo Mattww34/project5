@@ -1,0 +1,25 @@
+state = {
+	id = 577
+	name = "STATE_SOUTH_ELDER_DESERT"
+	manpower = 1000
+	state_category = wasteland
+	
+	resources = {
+		water = 8
+	}
+	
+	history = {
+		owner = EHT
+		add_core_of = EHT
+		victory_points = {
+			6300 5
+		}
+		buildings = {
+		infrastructure = 1
+		}
+	}
+	
+	provinces = {
+		6301 6300 6534 6533 8295 8296 8293 8292
+	}
+}

@@ -1,0 +1,22 @@
+state = {
+	id = 402
+	name = "STATE_GRAY_MOUNTAIN"
+	manpower = 2000
+	state_category = rural
+	
+	history = {
+		owner = BFT
+		add_core_of = BFT
+		victory_points = {
+			8022 5
+		}
+		buildings = {
+			infrastructure = 2
+		
+		}
+	}
+	
+	provinces = {
+		1545 8015 8016 8017 8018 8019 8020 8021 8022 8023
+	}
+}

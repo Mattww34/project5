@@ -1,0 +1,22 @@
+state = {
+	id = 427
+	name = "STATE_MARBLE_CANYON"
+	manpower = 2000
+	state_category = rural
+	
+	history = {
+		owner = BFT
+		add_core_of = BFT
+		victory_points = {
+			3104 5
+		}
+		buildings = {
+			infrastructure = 2
+		
+		}
+	}
+	
+	provinces = {
+		1001 1546 1613 1614 3104 3105 7983 8024 8025 8026 8027 8028 8029 8030 8031 8032 8033 8034 8035 8036 8037 8038 8039
+	}
+}

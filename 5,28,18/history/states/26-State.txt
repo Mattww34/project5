@@ -1,0 +1,25 @@
+
+state={
+	id=26
+	name="STATE_OTTER_CREEK"
+
+	history={
+		owner = CRZ
+		add_core_of = CRZ
+		victory_points = {
+			6400 5 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		6400 6438 6439 6440 9099 9096
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
