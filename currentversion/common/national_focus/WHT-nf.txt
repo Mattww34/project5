@@ -1,0 +1,503 @@
+focus_tree = {
+	id = WHT
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WHT
+		}
+	}
+	
+	default = no
+	#TREE WITHOUT GFX -- IMPORTANT MUST ADD
+	##################################################POLITICAL TREE################################################
+	##{
+	focus = {
+		id = WHT_raidtosurvive
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 0
+		cost = 2
+		prerequisite = {
+		}
+		completion_reward = {
+			add_ideas = WHT_raiding
+			add_popularity = {
+                ideology = people
+                popularity = 0.2
+            }
+		}
+	}
+	#############################################PEOPLE PATH##############
+	##{
+	focus = {
+		id = WHT_lowerbrutality
+		icon = GFX_goal_continuous_increase_nu
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = WHT_raidtosurvive
+		}
+		mutually_exclusive = {
+			focus = WHT_burnbridges
+		}
+		completion_reward = {
+			add_ideas = WHT_peaceful
+		}
+	}
+	
+	focus = {
+		id = WHT_produceforourselves
+		icon = GFX_goal_continuous_increase_nu
+		x = 4
+		y = 4
+		
+		prerequisite = {
+			people > 0.4
+			focus = WHT_lowerbrutality
+		}
+		bypass = {
+			NOT = {
+				has_idea = WHT_notselfreliant
+			}
+		}
+		completion_reward = {
+			remove_ideas = WHT_notselfreliant
+		}
+	}
+	
+	focus = {
+		id = WHT_ceasetheraiding
+		icon = GFX_goal_continuous_increase_nu
+		x = 4
+		y = 5
+		
+		prerequisite = {
+			focus = WHT_produceforourselves
+		}
+		bypass = {
+			NOT = {
+				has_idea = WHT_raiding
+			}
+		}
+		completion_reward = {
+			remove_ideas = WHT_raiding
+		}
+	}
+
+#################ANTI Reaver 
+##{
+	focus = {
+		id = WHT_reaversarecruel
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 6
+		
+		mutually_exclusive = {
+			focus = WHT_reaversarepowerful
+		}
+		
+		prerequisite = {
+			focus = WHT_ceasetheraiding
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = SKY modifier = large_decrease }
+		}
+	}
+	
+	focus = {
+		id = WHT_joinrubyvalley
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 7
+		
+		prerequisite = {
+			focus = WHT_reaversarecruel
+		}
+		completion_reward = {
+			create_faction = "People's Alliance"
+			add_to_faction = RUB
+		}
+	}
+	
+	focus = {
+		id = WHT_civilianbuisness
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 8
+		
+		prerequisite = {
+			focus = WHT_joinrubyvalley
+		}
+		available = {
+			owns_state = 306
+		}
+		completion_reward = {
+			306 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_armscompanies
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 9
+		
+		prerequisite = {
+			focus = WHT_civilianbuisness
+		}
+		available = {
+			owns_state = 138
+		}
+		completion_reward = {
+			138 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_taxedmarket
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 10
+		
+		prerequisite = {
+			focus = WHT_armscompanies
+		}
+		
+		completion_reward = {
+			add_war_support = -0.1
+			set_stability = 0.75
+		}
+	}
+	
+	focus = {
+		id = WHT_stopreavers
+		icon = GFX_goal_continuous_increase_nu
+		x = 1
+		y = 11
+		
+		prerequisite = {
+			focus = WHT_taxedmarket
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SKY
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_stopeighties
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 11
+		
+		prerequisite = {
+			focus = WHT_taxedmarket
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = EHT
+			}
+		}
+	}
+	
+##}
+#################Pro Reaver
+##{
+	focus = {
+		id = WHT_reaversarepowerful
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 6
+		
+		mutually_exclusive = {
+			focus = WHT_reaversarecruel
+		}
+		
+		prerequisite = {
+			focus = WHT_ceasetheraiding
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = SKY modifier = large_increase }
+		}
+	}
+	
+	focus = {
+		id = WHT_surrendertothorn
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 7
+		
+		prerequisite = {
+			focus = WHT_reaversarepowerful
+		}
+		
+		available = {
+			controls_state = 581
+			controls_state = 488
+			controls_state = 306
+		}
+			
+		completion_reward = {
+			THO = {
+				set_state_owner = 581
+				set_state_owner = 488
+				set_state_owner = 306
+				set_state_controller = 581
+				set_state_controller = 488
+				set_state_controller = 306
+				add_state_core = 581
+				add_state_core = 488
+				add_state_core = 306
+			}
+		}
+	}
+
+	focus = {
+		id = WHT_joinreavers
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 8
+		
+		prerequisite = {
+			focus = WHT_surrendertothorn
+		}
+		
+		available = {
+			SKY = {
+				is_faction_leader = yes
+			}
+		}
+		completion_reward = {
+			SKY = {
+				add_to_faction = WHT
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_safetyandprosperity
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 9
+		
+		prerequisite = {
+			focus = WHT_joinreavers
+		}
+		
+		completion_reward = {
+			add_ideas = WHT_prosperity
+		}
+	}
+	
+	focus = {
+		id = WHT_tothearmy
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 10
+		
+		mutually_exclusive = {
+			focus = WHT_totheeconomy
+		}
+		
+		prerequisite = {
+			focus = WHT_safetyandprosperity
+		}
+		
+		completion_reward = {
+			add_manpower = 4000
+		}
+	}
+	
+	focus = {
+		id = WHT_totheeconomy
+		icon = GFX_goal_continuous_increase_nu
+		x = 7
+		y = 10
+		
+		mutually_exclusive = {
+			focus = WHT_tothearmy
+		}
+		
+		prerequisite = {
+			focus = WHT_safetyandprosperity
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_controlled_by = WHT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+
+##}
+
+##}
+	#############################################ELITES/RULER PATH#############
+	##{
+	
+	focus = {
+		id = WHT_burnbridges
+		icon = GFX_goal_continuous_increase_nu
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = WHT_raidtosurvive
+		}
+		mutually_exclusive = {
+			focus = WHT_lowerbrutality
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = NCR modifier = large_decrease }
+			add_opinion_modifier = { target = DES modifier = large_decrease }
+			add_opinion_modifier = { target = NCN modifier = large_decrease }
+		}
+	}
+	######################EIGHTIES PATH#########################
+	##{
+
+	focus = {
+		id = WHT_raidwitheighties
+		icon = GFX_goal_continuous_increase_nu
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = WHT_burnbridges
+		}
+		mutually_exclusive = {
+			focus = WHT_caesarisgod
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = EHT modifier = large_increase }
+		}
+	}
+	
+	focus = {
+		id = WHT_formroadgods
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = WHT_raidwitheighties
+		}
+		
+		completion_reward = {
+			create_faction = "Road Gods"
+		}
+	}
+
+	focus = {
+		id = WHT_godlyroads
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = WHT_formroadgods
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_controlled_by = WHT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_godlymotorized
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = WHT_godlyroads
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = vehicle_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = WHT_raidnewcanaan
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = WHT_godlymotorized
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = NCN }
+		}
+	}
+	##}
+	
+	######################LEGION PATH###########################
+	##{
+	focus = {
+		id = WHT_caesarisgod
+		icon = GFX_goal_continuous_increase_nu
+		x = 13
+		y = 3
+		prerequisite = {
+			focus = WHT_burnbridges
+		}
+		mutually_exclusive = {
+			focus = WHT_raidwitheighties
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = CES modifier = huge_increase }
+		}
+	}
+	
+	
+	##}
+	##}
+
+}
