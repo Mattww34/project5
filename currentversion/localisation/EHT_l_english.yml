@@ -1,11 +1,143 @@
 ﻿l_english:
- #------------------------------
- #events
- #-----------------------------------
+#------------------------------
+#events
+#-----------------------------------
+EHT.0.t:0 "Remembering the legacy"
+EHT.0.d:0 "We one ruled all of Northern California , Nevada, and parts of Utah. We must expend and reclaim our lost territory!"
+EHT.0.a:0 "we remember our legacy"
+EHT.0.b:0 "To start anew"
 
- 
+EHT.1.t:0 ""
+EHT.1.d:0 ""
+EHT.1.a:0 ""
+EHT.1.b:0 ""
+
+EHT.2.t:0 ""
+EHT.2.d:0 ""
+EHT.2.a:0 ""
+EHT.2.b:0 ""
+
+
+
 #--------------------------------
 #ideas
 #--------------------------------
-WHT_notselfreliant:0 "Lack of reliance"
-WHT_rejection_of_automation:0 "Lack of Scientific Knowledge"
+
+
+#---------------
+#focus
+#------------------
+remembering_the_legacy:0 "Remembering the legacy"
+remembering_the_legacy_desc:0 "We one ruled all of Northern California , Nevada, and parts of Utah. We must expend and reclaim our lost territory!"
+raiding_the_old_army_base:0 "Raiding the old army base"
+raiding_the_old_army_base_desc:0 "We will send our scavengers to pick apart the old army base"
+the_2nd_fate_of_jericho:0 "The 2nd Fate Of Jericho"
+the_2nd_fate_of_jericho_desc:0 "The people of jericho have they suffered enough?"
+the_eighties_path:0 "The Eighties' Path"
+the_eighties_path_desc:0 "Our beliefs are conflicted some believe in the old ways and others believe in this Mormon god."
+thunderbirds_path:0 "Thunderbird's Path"
+thunderbirds_path_desc:0 "I must walk down a path but witch one shall I walk"
+the_path_of_thunder:0 "The Path Of Thunder"
+the_path_of_thunder_desc:0 "I walk the path of thunder in the gods foot steps"
+form_ties_with_the_white_legs:0 "Form Ties With The White Legs"
+form_ties_with_the_white_legs_desc:0 "We will send some one to talk to the white legs about a future friendship"
+the_thunder_guards:0 "The Thunder Guards"
+the_thunder_guards_desc:0 "The elite guards of Thunderbird"
+salt_upon_wounds:0 "Salt-Upon-Wounds"
+salt_upon_wounds_desc:0 "Salt-upon-wounds world make a good friend maybe we should send him a friend request."
+The_path_of_god:0 "The Path Of God"
+The_path_of_god_desc:0 "The Mormon God is the only way"
+learning_more_about_themormons:0 "Learning About The Mormons"
+learning_more_about_themormons_desc:0 "We must learn more about the Mormons and Jeremiah Rigdon that could be our new friends"
+chosen_by_god:0 "Chosen By God"
+chosen_by_god_desc:0 "I am god's chosen warrior the crusades will begin soon."
+jeremiah_rigdon:0 "	4. Jeremiah Rigdon"
+jeremiah_rigdon_desc:0 "God is the only way and his living prophet proves that we live to serve you oh lord."
+rebuilding_the_land:0 "Rebuilding The Land"
+rebuilding_the_land_desc:0 "We need to rebuild the old warfort and the land around it"
+build_the_warfort:0 "Building The Warfort"
+build_the_warfort_desc:0 "We have started on construction on the warfort"
+repairing_the_construction_factories:0 "Repairing The Construction Factories"
+repairing_the_construction_factories_desc:0 "If we repaired the old construction factories we could be able to restore the roads"
+building_the_war_garage:0 "Building The War Garage"
+building_the_war_garage_desc:0 "By building a war garage we can build more warbikes."
+repairing_the_old_factories:0 "Repairing The Old Factories"
+repairing_the_old_factories_desc:0 "If we repair these old factories we could produce more stuff for our needs"
+expending_the_war_garage:0 "Expending The War Garage"
+expending_the_war_garage_desc:0 "By expending the war garage we can produce more warbikes."
+RepairingTheNorthernRoads:0 "Repairing The Northern Roads"
+RepairingTheNorthernRoads_desc:0 ""
+RepairingTheSouthernRoads:0 "Repairing The Southern Roads"
+RepairingTheSouthernRoads_desc:0 ""
+RepairingTheEasternRoads:0 "Repairing The Eastern Roads"
+RepairingTheEasternRoads_desc:0 ""
+RepairingTheWesternRoads:0 "Repairing The Western Roads"
+RepairingTheWesternRoads_desc:0 ""
+SendOurWarraidersToHammond:0 "Send Our Warraiders To Hammond"
+SendOurWarraidersToHammond_desc:0 "We must send raiders to Hammond to bring back goods or slaves"
+RaidingTheEastPort:0 "Raiding The East Port"
+RaidingTheEastPort_desc:0 "We must send raiders to the East of the Port to bring back goods or slaves"
+NotARefuge:0 "Not A Refuge"
+NotARefuge_desc:0 "We must send raiders to bring back goods or slaves"
+StrikeAtNewCanaan:0 "Strike At New Canaan"
+StrikeAtNewCanaan_desc:0 "The time to strike is now" 
+TakeNewJerusalem:0 "Take New Jerusalem"
+TakeNewJerusalem_desc:0 ""
+thespoilsofnewjerusalem:0 "The Spoils Of New Jerusalem"
+thespoilsofnewjerusalem_desc:0 "the poils of New Jerusalem are now ours"
+TakeMoab:0 "Strike The Unholy"
+TakeMoab_desc:0 "God His Commanded Me To Strike at The White Legs "
+TheResourcesOfMoab:0 "The The New Slave's Of Moab"
+TheResourcesOfMoab_desc:0 "We have started to round up the population of Moab"
+IncorporateTheirTribe:0 "Incorporate Their Tribe"
+IncorporateTheirTribe_desc:0 ""
+ForTheLoveOfHammond:0 "For The Love Of Hammond" 
+IncorporateHammond:0 "Incorporate Hammond"
+TheRaidersOfHammond:0 "The Raider's Of Hammond"
+TakingAPort:0 "Taking A Port" 
+IncorporateThePort:0 "Incorporate The Port"
+ThePortRaiders:0 "The Port Raiders"
+TheBloodyValleyMassacre:0 "The Bloody Valley Massacre"
+IncorporateWhatsLeft:0 "Incorporate What's Left"
+TheRubyRaiders:0 "The Ruby Raiders"
+TheSmartPeople:0 "The Smart People"
+MrFancyPants:0 "Mr. Fancy Pants"
+PewPewLeasers:0 "Pew Pew Leasers"
+ICanSeeAThingInThisHamlet:0 "I Can't See A Thing In This Hamlet"
+NotWarbikesHowDareYou:0 "Not Warbikes How Dare You"
+WhatsAnAPC:0 "What's An APC ?"
+WhatsPowerArmor:0 "What's Power Armor ?"
+TheRealPewPew:0 "TheRealPewPew"
+MyNewWarbeast:0 "MyNewWarbeast"
+IWillTakeTwo:0 "I Will Take Two !"
+UltimatePewPew:0 "Ultimate Pew Pew"
+MrKnowItAll:0 "Mr. Know It All"
+WeKnowHowtoWrite:0 "We Know How to Write !"
+NowHeIsTellingUsHowToBuildStuff:0 "Now He Is Telling Us How To Build Stuff !"
+WhyDoWeNeedRadios:0 "Why Do We Need Radios"
+WeKnowHowToBuildBikes:0 "We Know How To Build Bikes"
+MyGod:0 "My God"
+ARealBangBang:0 "A Real Bang Bang"
+KnowItAllIndeed:0 "Know It All Indeed"
+ForTheLoveOfMagnum:0 "For The Love Of Magnum!"
+TheUltimateBang:0 "The Ultimate Bang!"
+WhoWillLeadTheWararmy:0 " Who Will Lead The Wararmy ?"
+RedCharger:0 "Red Charger"
+LightningFastWarraiders:0 "Lightning Fast Warraiders"
+8CostCustoms:0 "8 Cost Customs"
+MoreWarbikes:0 "More Warbikes"
+KingsOfTheHighways:0 " Kings Of The Highways "
+WhiteNauvoo:0 "White Nauvoo"
+GodsWarcrusaders:0 "God's Warcrusaders "
+TheFactoryOfGodsLove:0 "The Factory Of God's Love"
+MassConversion:0 "Mass Conversion"
+KnightsOfThechurch:0 "Knight's Of The Church"
+
+
+
+
+
+
+
+
+
