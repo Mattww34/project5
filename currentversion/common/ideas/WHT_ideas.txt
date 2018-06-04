@@ -30,7 +30,6 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.1
 				production_speed_industrial_complex_factor = -0.75
 				production_speed_arms_factory_factor = -0.75
 				conversion_cost_civ_to_mil_factor = 0.75
@@ -42,5 +41,60 @@ ideas = {
 			}
 		}
 		
+
+		WHT_raiding = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				trade_opinion_factor = -0.75
+				local_resources_factor = 0.5
+				justify_war_goal_time = -0.25
+				enemy_justify_war_goal_time = -0.35
+				MONTHLY_POPULATION = 0.1
+				ruler_drift = 0.01
+			}
+		}
+
+		WHT_peaceful = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				trade_opinion_factor = 0.5
+				justify_war_goal_time = 0.5
+				enemy_justify_war_goal_time = 0.15
+				people_drift = 0.1
+			}
+		}
+
+		WHT_prosperity = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+		hidden_ideas = {
+
+		
+		}
 	}
 }
