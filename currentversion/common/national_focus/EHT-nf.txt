@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 # Legacy Tree#
 	focus = {
-		id = 
+		id = remembering_the_legacy
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
 			focus = 
@@ -28,10 +28,10 @@ focus_tree = {
 		}
 }
 focus = {
-		id = 
+		id = raiding_the_old_army_base
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = remembering_the_legacy
 		}
 		mutually_exclusive = {
 		}
@@ -45,10 +45,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = the_2nd_fate_of_jericho
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = raiding_the_old_army_base 
 		}
 		mutually_exclusive = {
 		}
@@ -62,10 +62,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = the_eighties_path
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_2nd_fate_of_jericho
 		}
 		mutually_exclusive = {
 		}
@@ -80,12 +80,13 @@ focus = {
 }
 # The Path Tree #
 focus = {
-		id = 
+		id = thunderbirds_path
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_eighties_path
 		}
 		mutually_exclusive = {
+		     focus = The_path_of_god
 		}
 		available = {
 		}
@@ -97,10 +98,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = the_path_of_thunder
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = thunderbirds_path
 		}
 		mutually_exclusive = {
 		}
@@ -114,10 +115,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = form_ties_with_the_white_legs
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_path_of_thunder
 		}
 		mutually_exclusive = {
 		}
@@ -131,10 +132,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = the_thunder_guards
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = form_ties_with_the_white_legs
 		}
 		mutually_exclusive = {
 		}
@@ -148,10 +149,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = salt_upon_wounds
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_thunder_guards
 		}
 		mutually_exclusive = {
 		}
@@ -165,12 +166,13 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = The_path_of_god
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = thunderbirds_path
 		}
 		mutually_exclusive = {
+		    focus = thunderbirds_path
 		}
 		available = {
 		}
@@ -182,10 +184,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = learning_more_about_themormons
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = The_path_of_god
 		}
 		mutually_exclusive = {
 		}
@@ -199,10 +201,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = chosen_by_god
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = learning_more_about_themormons
 		}
 		mutually_exclusive = {
 		}
@@ -216,10 +218,10 @@ focus = {
 		}
 }
 		focus = {
-		id = 
+		id = jeremiah_rigdon
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = chosen_by_god
 		}
 		mutually_exclusive = {
 		}
@@ -234,10 +236,10 @@ focus = {
 }
 # economey tree#
 focus = {
-		id = 
+		id = rebuilding_the_land
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_eighties_path
 		}
 		mutually_exclusive = {
 		}
@@ -251,10 +253,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
-		icon = GFX_goal_continuous_increase_nu 
+		id = build_the_warfort
+        icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = rebuilding_the_land
 		}
 		mutually_exclusive = {
 		}
@@ -268,10 +270,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = repairing_the_construction_factories
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = build_the_warfort
 		}
 		mutually_exclusive = {
 		}
@@ -285,10 +287,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = repairing_the_old_factories
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = building_the_war_garage
 		}
 		mutually_exclusive = {
 		}
@@ -302,10 +304,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = expending_the_war_garage
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = repairing_the_old_factories
 		}
 		mutually_exclusive = {
 		}
@@ -319,10 +321,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RepairingTheNorthernRoads
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = build_the_warfort
 		}
 		mutually_exclusive = {
 		}
@@ -336,10 +338,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RepairingTheSouthernRoads
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RepairingTheNorthernRoads
 		}
 		mutually_exclusive = {
 		}
@@ -353,10 +355,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RepairingTheEasternRoads
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RepairingTheSouthernRoads
 		}
 		mutually_exclusive = {
 		}
@@ -370,10 +372,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RepairingTheWesternRoads
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RepairingTheEasternRoads
 		}
 		mutually_exclusive = {
 		}
@@ -388,10 +390,11 @@ focus = {
 }
 # raiding / expansion tree#
 focus = {
-		id = 
+		id = SendOurWarraidersToHammond
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RepairingTheEasternRoads
+			focus = expending_the_war_garage
 		}
 		mutually_exclusive = {
 		}
@@ -405,10 +408,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RaidingTheEastPort
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = SendOurWarraidersToHammond
 		}
 		mutually_exclusive = {
 		}
@@ -422,10 +425,10 @@ focus = {
 		}
 }
 	focus = {
-		id = 
+		id = NotARefuge
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RaidingTheEastPort
 		}
 		mutually_exclusive = {
 		}
@@ -440,12 +443,13 @@ focus = {
 }
 
 focus = {
-		id = 
+		id = StrikeAtNewCanaan
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotARefuge
 		}
 		mutually_exclusive = {
+			focus = TakeMoab
 		}
 		available = {
 		}
@@ -457,10 +461,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TakeNewJerusalem
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = StrikeAtNewCanaan
 		}
 		mutually_exclusive = {
 		}
@@ -474,10 +478,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = thespoilsofnewjerusalem
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TakeNewJerusalem
 		}
 		mutually_exclusive = {
 		}
@@ -491,12 +495,13 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TakeMoab
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotARefuge
 		}
 		mutually_exclusive = {
+		    focus =StrikeAtNewCanaan
 		}
 		available = {
 		}
@@ -508,10 +513,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TheResourcesOfMoab
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TakeMoab
 		}
 		mutually_exclusive = {
 		}
@@ -525,10 +530,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = IncorporateTheirTribe
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheResourcesOfMoab
 		}
 		mutually_exclusive = {
 		}
@@ -543,10 +548,10 @@ focus = {
 }
 
 focus = {
-		id = 
+		id = ForTheLoveOfHammond
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = SendOurWarraidersToHammond
 		}
 		mutually_exclusive = {
 		}
@@ -560,10 +565,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = IncorporateHammond
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = ForTheLoveOfHammond
 		}
 		mutually_exclusive = {
 		}
@@ -577,10 +582,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TheRaidersOfHammond
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = IncorporateHammond
 		}
 		mutually_exclusive = {
 		}
@@ -594,10 +599,10 @@ focus = {
 		}
 }
 	focus = {
-		id = 
+		id = TakingAPort
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RaidingTheEastPort
 		}
 		mutually_exclusive = {
 		}
@@ -611,10 +616,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = Incorporate The Port
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TakingAPort
 		}
 		mutually_exclusive = {
 		}
@@ -628,10 +633,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = ThePortRaiders
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = Incorporate The Port
 		}
 		mutually_exclusive = {
 		}
@@ -646,10 +651,10 @@ focus = {
 }
 
 focus = {
-		id = 
+		id = TheBloodyValleyMassacre
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotARefuge
 		}
 		mutually_exclusive = {
 		}
@@ -663,10 +668,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = IncorporateWhatsLeft
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheBloodyValleyMassacre
 		}
 		mutually_exclusive = {
 		}
@@ -680,10 +685,11 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TheRubyRaiders
+
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = IncorporateWhatsLeft
 		}
 		mutually_exclusive = {
 		}
@@ -706,8 +712,8 @@ focus = {
 		}
 		available = {
 		}
-		x = 8
-		y = 15
+		x = 
+		y = 
 		cost = 1
 		completion_reward = {
 			
@@ -716,10 +722,10 @@ focus = {
 #tech tree#
 
 focus = {
-		id = 
+		id = TheSmartPeople
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_eighties_path
 		}
 		mutually_exclusive = {
 		}
@@ -735,10 +741,10 @@ focus = {
 
 
 focus = {
-		id = 
+		id = MrFancyPants
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheSmartPeople
 		}
 		mutually_exclusive = {
 		}
@@ -752,10 +758,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = PewPewLeasers
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = MrFancyPants
 		}
 		mutually_exclusive = {
 		}
@@ -769,10 +775,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = ICanSeeAThingInThisHamlet
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = PewPewLeasers
 		}
 		mutually_exclusive = {
 		}
@@ -786,10 +792,10 @@ focus = {
 		}
 }
 	focus = {
-		id = 
+		id = NotWarbikesHowDareYou
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = ICanSeeAThingInThisHamlet
 		}
 		mutually_exclusive = {
 		}
@@ -803,12 +809,14 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = WhatsAnAPC
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotWarbikesHowDareYou
 		}
 		mutually_exclusive = {
+		    focus = WhatsPowerArmor
+			focus = TheRealPewPew
 		}
 		available = {
 		}
@@ -820,10 +828,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = MyNewWarbeast
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhatsAnAPC
 		}
 		mutually_exclusive = {
 		}
@@ -837,12 +845,14 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = WhatsPowerArmor
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotWarbikesHowDareYou
 		}
 		mutually_exclusive = {
+		    focus = WhatsAnAPC
+			focus = TheRealPewPew
 		}
 		available = {
 		}
@@ -854,10 +864,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = IWillTakeTwo
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhatsPowerArmor
 		}
 		mutually_exclusive = {
 		}
@@ -871,12 +881,14 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TheRealPewPew
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NotWarbikesHowDareYou
 		}
 		mutually_exclusive = {
+		    focus = WhatsAnAPC
+			focus = WhatsPowerArmor
 		}
 		available = {
 		}
@@ -888,10 +900,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = UltimatePewPew
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheRealPewPew
 		}
 		mutually_exclusive = {
 		}
@@ -907,10 +919,10 @@ focus = {
 
 
 focus = {
-		id = 
+		id = MrKnowItAll
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheSmartPeople
 		}
 		mutually_exclusive = {
 		}
@@ -924,10 +936,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = WeKnowHowtoWrite
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = MrKnowItAll
 		}
 		mutually_exclusive = {
 		}
@@ -941,10 +953,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = NowHeIsTellingUsHowToBuildStuff
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WeKnowHowtoWrite
 		}
 		mutually_exclusive = {
 		}
@@ -958,10 +970,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = WhyDoWeNeedRadios 
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = NowHeIsTellingUsHowToBuildStuff
 		}
 		mutually_exclusive = {
 		}
@@ -975,10 +987,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = WeKnowHowToBuildBikes
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhyDoWeNeedRadios
 		}
 		mutually_exclusive = {
 		}
@@ -992,10 +1004,10 @@ focus = {
 		}
 }
 		focus = {
-		id = 
+		id = KnowItAllIndeed
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WeKnowHowToBuildBikes
 		}
 		mutually_exclusive = {
 		}
@@ -1009,10 +1021,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = MyGod
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhyDoWeNeedRadios
 		}
 		mutually_exclusive = {
 		}
@@ -1026,10 +1038,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = ForTheLoveOfMagnum
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = MyGod
 		}
 		mutually_exclusive = {
 		}
@@ -1043,10 +1055,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = ARealBangBang
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhyDoWeNeedRadios
 		}
 		mutually_exclusive = {
 		}
@@ -1061,10 +1073,10 @@ focus = {
 }
 
 focus = {
-		id = 
+		id = TheUltimateBang
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = ARealBangBang
 		}
 		mutually_exclusive = {
 		}
@@ -1079,10 +1091,10 @@ focus = {
 }
 #mil tech tree#
 focus = {
-		id = 
+		id = WhoWillLeadTheWararmy
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = the_eighties_path
 		}
 		mutually_exclusive = {
 		}
@@ -1096,12 +1108,13 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = RedCharger
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = WhoWillLeadTheWararmy
 		}
 		mutually_exclusive = {
+			focus = WhiteNauvoo
 		}
 		available = {
 		}
@@ -1113,10 +1126,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = LightningFastWarraiders
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = RedCharger
 		}
 		mutually_exclusive = {
 		}
@@ -1130,10 +1143,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = 8CostCustoms
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = LightningFastWarraiders
 		}
 		mutually_exclusive = {
 		}
@@ -1147,10 +1160,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = MoreWarbikes
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = 8CostCustoms
 		}
 		mutually_exclusive = {
 		}
@@ -1164,10 +1177,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = KingsOfTheHighways
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = MoreWarbikes
 		}
 		mutually_exclusive = {
 		}
@@ -1175,50 +1188,34 @@ focus = {
 		}
 		x = 22
 		y = 9
+		cost = 1
+		completion_reward = {
+			
+		}
+}
+focus = {
+		id = WhiteNauvoo
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhoWillLeadTheWararmy
+			}
+		mutually_exclusive = {
+			focus = RedCharger
+		}
+		available = {
+		}
+		x = 26
+		y = 5
 		cost = 1
 		completion_reward = {
 			
 		}
 }
 		focus = {
-		id = 
+		id = GodsWarcrusaders
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
-		}
-		mutually_exclusive = {
-		}
-		available = {
-		}
-		x = 22
-		y = 10
-		cost = 1
-		completion_reward = {
-			
-		}
-}
-focus = {
-		id = 
-		icon = GFX_goal_continuous_increase_nu 
-		prerequisite = {
-			focus = 
-		}
-		mutually_exclusive = {
-		}
-		available = {
-		}
-		x = 26
-		y = 5
-		cost = 1
-		completion_reward = {
-			
-		}
-}
-focus = {
-		id = 
-		icon = GFX_goal_continuous_increase_nu 
-		prerequisite = {
-			focus = 
+			focus = WhiteNauvoo
 		}
 		mutually_exclusive = {
 		}
@@ -1232,10 +1229,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = TheFactoryOfGodsLove
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = GodsWarcrusaders
 		}
 		mutually_exclusive = {
 		}
@@ -1249,10 +1246,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = MassConversion
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
+			focus = TheFactoryOfGodsLove
 		}
 		mutually_exclusive = {
 		}
@@ -1266,27 +1263,10 @@ focus = {
 		}
 }
 focus = {
-		id = 
+		id = KnightsOfThechurch
 		icon = GFX_goal_continuous_increase_nu 
 		prerequisite = {
-			focus = 
-		}
-		mutually_exclusive = {
-		}
-		available = {
-		}
-		x = 26
-		y = 7
-		cost = 1
-		completion_reward = {
-			
-		}
-}
-focus = {
-		id = 
-		icon = GFX_goal_continuous_increase_nu 
-		prerequisite = {
-			focus = 
+			focus = MassConversion
 		}
 		mutually_exclusive = {
 		}
@@ -1299,22 +1279,5 @@ focus = {
 			
 		}
 }
-focus = {
-		id = 
-		icon = GFX_goal_continuous_increase_nu 
-		prerequisite = {
-			focus = 
-		}
-		mutually_exclusive = {
-		}
-		available = {
-		}
-		x = 26
-		y = 10
-		cost = 1
-		completion_reward = {
-			
-		}
-}
 
-	}
+}
