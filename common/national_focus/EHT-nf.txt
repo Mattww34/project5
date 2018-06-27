@@ -1,0 +1,1551 @@
+focus_tree = {
+	id = EHT
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EHT
+		}
+	}
+
+	default = no
+# Legacy Tree#
+	focus = {
+		id = remembering_the_legacy
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 0
+		cost = 1
+		completion_reward = {
+			country_event = { id = EHT_events.1}
+		}
+}
+focus = {
+		id = raiding_the_old_army_base
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = remembering_the_legacy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 1
+		cost = 1
+		completion_reward = {
+			country_event = { id = EHT_events.2}
+		}
+}
+focus = {
+		id = the_2nd_fate_of_jericho
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = raiding_the_old_army_base 
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 2
+		cost = 1
+		completion_reward = {
+			country_event = { id = EHT_events.3}
+		}
+}
+focus = {
+		id = the_eighties_path
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_2nd_fate_of_jericho
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 3
+		cost = 1
+		completion_reward = {
+			country_event = { id = EHT_events.4}
+		}
+}
+# The Path Tree #
+focus = {
+		id = thunderbirds_path
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_eighties_path
+		}
+		mutually_exclusive = {
+		     
+		}
+		available = {
+		}
+		x = 2
+		y = 3
+		cost = 1
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+}
+focus = {
+		id = the_path_of_thunder
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = thunderbirds_path
+		}
+		mutually_exclusive = {
+		     focus = The_path_of_god
+		}
+		available = {
+		}
+		x = 0
+		y = 4
+		cost = 8.6
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+}
+focus = {
+		id = form_ties_with_the_white_legs
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_path_of_thunder
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 0
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			give_guarantee = WHT
+			diplomatic_relation = {
+    country = WHT
+    relation = guarantee
+    active = yes
+}
+		}
+}
+focus = {
+		id = the_thunder_guards
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = form_ties_with_the_white_legs
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 0
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			hidden_effect = { load_oob = EHT_elite_guards }
+			add_war_support = 0.2
+			add_manpower = 1000
+		}
+}
+focus = {
+		id = salt_upon_wounds
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_thunder_guards
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 0
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			create_faction = The_Road_Pact
+			add_ideas = {salt_upon_wounds_EHT}
+		}
+}
+focus = {
+		id = The_path_of_god
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = thunderbirds_path
+		}
+		mutually_exclusive = {
+		    focus = the_path_of_thunder
+		}
+		available = {
+		}
+		x = 4
+		y = 4
+		cost = 8.6
+		completion_reward = {
+			add_stability = -0.15
+			set_politics = {
+    parties = {
+		 people = { 
+			popularity = 0
+		}
+
+		elites = {
+			popularity = 0
+		}
+		
+		intellectuals = {
+			popularity = 70
+		}
+		
+		ruler = { 
+			popularity = 30
+		}
+	}
+	
+	ruling_party = intellectuals}
+    create_country_leader  = {
+    name = "Thunderbird"
+    desc = "Thunderbird_DESC"
+    picture = "Portrait_Thunderbird.dds"
+    expire = "3000.1.1"
+    ideology = ideocracy
+    
+    traits = {
+    }
+}
+}
+	}	
+
+focus = {
+		id = learning_more_about_themormons
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = The_path_of_god
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 4
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			add_stability = -0.05
+				give_guarantee = NCN
+			diplomatic_relation = {
+    country = NCN
+    relation = guarantee
+    active = yes
+}
+		}
+}
+focus = {
+		id = chosen_by_god
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = learning_more_about_themormons
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 4
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.1
+			add_manpower = 1500
+			army_experience = 50
+		}
+}
+		focus = {
+		id = jeremiah_rigdon
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = chosen_by_god
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 4
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			add_ideas = {jeremiah_rigdon_EHT}
+		}
+}
+# economey tree#
+focus = {
+		id = rebuilding_the_land
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_eighties_path
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 4
+		cost = 8.6
+		completion_reward = {
+				40 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+}
+focus = {
+		id = build_the_warfort
+        icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = rebuilding_the_land
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			478 = {
+			 add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+}
+}
+focus = {
+		id = repairing_the_construction_factories
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = build_the_warfort
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			
+			577 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+}
+}
+focus = {
+		id = repairing_the_old_factories
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = repairing_the_construction_factories
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 7
+		cost = 8.6
+		completion_reward = {
+				
+			577 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+}
+focus = {
+		id = expending_the_war_garage
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = repairing_the_old_factories
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			270 = {
+			 add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+		}
+		}
+}
+focus = {
+		id = RepairingTheNorthernRoads
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = build_the_warfort
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			512 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+			478 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+			440 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}}
+			577 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}}
+		}
+}
+focus = {
+		id = RepairingTheSouthernRoads
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RepairingTheNorthernRoads
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			309 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+			270 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}}
+			213 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+			}
+		}
+
+focus = {
+		id = RepairingTheEasternRoads
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RepairingTheSouthernRoads
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			264 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+		}
+}
+focus = {
+		id = RepairingTheWesternRoads
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RepairingTheEasternRoads
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			309 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}}
+		}
+}
+# raiding / expansion tree#
+focus = {
+		id = SendOurWarraidersToHammond
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RepairingTheEasternRoads
+			focus = expending_the_war_garage
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 8
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			country_event = { id = EHT_events.5} 
+		}
+}
+focus = {
+		id = RaidingTheEastPort
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = SendOurWarraidersToHammond
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 8
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			add_manpower = 500
+		}
+}
+	focus = {
+		id = NotARefuge
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RaidingTheEastPort
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 8
+		y = 11
+		cost = 8.6
+		completion_reward = {
+			country_event = { id = EHT_events.8} 
+		}
+}
+
+focus = {
+		id = StrikeAtNewCanaan
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotARefuge
+		}
+		mutually_exclusive = {
+			focus = TakeMoab
+		}
+		available = {
+		}
+		x = 7
+		y = 12
+		cost = 8.6
+		completion_reward = {
+			create_wargoal = {
+    type = puppet_wargoal_focus
+    target = NCN
+}
+		}
+}
+focus = {
+		id = TakeNewJerusalem
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = StrikeAtNewCanaan
+		}
+		mutually_exclusive = {
+			EHT	= {
+				owns_state = 50
+				owns_state = 457
+				owns_state = 266
+			}
+		}
+		available = {
+		}
+		x = 7
+		y = 13
+		cost = 8.6
+		completion_reward = {
+			add_state_core = 50
+			add_state_core = 457
+			add_state_core = 266
+		}
+}
+focus = {
+		id = thespoilsofnewjerusalem
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TakeNewJerusalem
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 7
+		y = 14
+		cost = 8.6
+		completion_reward = {
+			add_resource = {type = fuel amount= 10 state = 266}
+			add_equipment_to_stockpile = { 
+				type = support_equipment_1
+				amount = 1000
+				producer = EHT		
+				}
+				add_equipment_to_stockpile = { 
+				type = flamer_equipment_2
+				amount = 1000
+				producer = EHT		
+				}
+				}
+}
+focus = {
+		id = TakeMoab
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotARefuge
+		}
+		mutually_exclusive = {
+		    focus = StrikeAtNewCanaan
+		}
+		available = {
+		}
+		x = 9
+		y = 12
+		cost = 8.6
+		completion_reward = {
+				create_wargoal = {
+    type = puppet_wargoal_focus
+    target = WHT
+}
+		}
+}
+focus = {
+		id = TheResourcesOfMoab
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TakeMoab
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 9
+		y = 13
+		cost = 8.6
+		completion_reward = {
+			add_resource = {type = metal amount= 10 state = 266}
+			add_resource = {type = fuel amount= 10 state = 266}
+		}
+}
+focus = {
+		id = IncorporateTheirTribe
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheResourcesOfMoab
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		EHT	= {
+				owns_state = 138
+				owns_state = 496
+				owns_state = 306
+			}
+		}
+		x = 9
+		y = 14
+		cost = 8.6
+		completion_reward = {
+			add_state_core = 138
+			add_state_core = 496
+			add_state_core = 306
+			add_manpower = 500
+		}
+}
+
+focus = {
+		id = ForTheLoveOfHammond
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = SendOurWarraidersToHammond
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 1
+		y = 9
+		cost = 8.6
+		completion_reward = {
+						create_wargoal = {
+    type = puppet_wargoal_focus
+    target = HAM
+}
+		}
+}
+focus = {
+		id = IncorporateHammond
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = ForTheLoveOfHammond
+		}
+		mutually_exclusive = {
+		EHT	= {
+				owns_state = 170
+				owns_state = 530
+				owns_state = 131
+				owns_state = 406
+				owns_state = 413
+			}
+		}
+		available = {
+		}
+		x = 1
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			add_state_core = 170
+			add_state_core = 530
+			add_state_core = 131
+			add_state_core = 413
+			add_state_core = 341
+		}
+}
+focus = {
+		id = TheRaidersOfHammond
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = IncorporateHammond
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 1
+		y = 11
+		cost = 8.6
+		completion_reward = {
+			add_manpower = 500
+		}
+}
+	focus = {
+		id = TakingAPort
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RaidingTheEastPort
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 4
+		y = 10
+		cost = 8.6
+		completion_reward = {
+								create_wargoal = {
+    type = puppet_wargoal_focus
+    target = EAS
+}
+		}
+}
+focus = {
+		id = Incorporate The Port
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TakingAPort
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		EHT	= {
+				owns_state = 367
+				owns_state = 73
+				owns_state = 263
+				owns_state = 406
+				owns_state = 375
+				owns_state = 567
+			}
+		}
+		x = 4
+		y = 11
+		cost = 8.6
+		completion_reward = {
+			add_state_core = 367
+			add_state_core = 73
+			add_state_core = 263
+			add_state_core = 406
+			add_state_core = 375
+			add_state_core = 567
+		}
+}
+focus = {
+		id = ThePortRaiders
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = Incorporate The Port
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 4
+		y = 12
+		cost = 8.6
+		completion_reward = {
+			add_manpower = 250
+		}
+}
+
+focus = {
+		id = TheBloodyValleyMassacre
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotARefuge
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 13
+		y = 11
+		cost = 8.6
+		completion_reward = {
+								create_wargoal = {
+    type = puppet_wargoal_focus
+    target = RUB
+}
+		}
+}
+focus = {
+		id = IncorporateWhatsLeft
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheBloodyValleyMassacre
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		EHT	= {
+				owns_state = 521
+				owns_state = 286
+				owns_state = 237
+				
+			}
+		}
+		x = 13
+		y = 12
+		cost = 8.6
+		completion_reward = {
+			add_state_core = 521
+			add_state_core = 286
+			add_state_core = 237
+		}
+}
+focus = {
+		id = TheRubyRaiders
+
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = IncorporateWhatsLeft
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 13
+		y = 13
+		cost = 8.6
+		
+		completion_reward = {
+			add_manpower = 420
+		}
+}
+
+#tech tree#
+
+focus = {
+		id = TheSmartPeople
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_eighties_path
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 14
+		y = 4
+		cost = 8.6
+		completion_reward = {
+			add_research_slot = 1
+
+		}
+}
+
+
+focus = {
+		id = MrFancyPants
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheSmartPeople
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 12
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			set_technology = {
+            car_tech_2 = 1
+}
+		}
+}
+focus = {
+		id = PewPewLeasers
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = MrFancyPants
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 12
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			set_technology = {
+            basic_laser_weaponry = 1}
+		}
+}
+focus = {
+		id = ICanSeeAThingInThisHamlet
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = PewPewLeasers
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 12
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			set_technology = {basic_infantry_equipment = 1} 
+		}
+}
+	focus = {
+		id = NotWarbikesHowDareYou
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = ICanSeeAThingInThisHamlet
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 12
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			set_technology = {truck_tech_2 = 1} 
+		}
+}
+focus = {
+		id = WhatsAnAPC
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotWarbikesHowDareYou
+		}
+		mutually_exclusive = {
+		    focus = WhatsPowerArmor
+			focus = TheRealPewPew
+		}
+		available = {
+		}
+		x = 10
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = {apc_tech_1 = 1} 
+		}
+}
+focus = {
+		id = MyNewWarbeast
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhatsAnAPC
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 10
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			set_technology = {tank_tech_1 = 1} 
+		}
+}
+focus = {
+		id = WhatsPowerArmor
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotWarbikesHowDareYou
+		}
+		mutually_exclusive = {
+		    focus = WhatsAnAPC
+			focus = TheRealPewPew
+		}
+		available = {
+		}
+		x = 14
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = { power_armour_raider = 1}
+			hidden_effect = {
+				load_oob = "unlock_power_armor"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		
+		}
+}
+focus = {
+		id = IWillTakeTwo
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhatsPowerArmor
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 14
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = raider_power_armour_equipment
+				amount = 200
+				producer = EHT		
+			}
+		}
+}
+focus = {
+		id = TheRealPewPew
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NotWarbikesHowDareYou
+		}
+		mutually_exclusive = {
+		    focus = WhatsAnAPC
+			focus = WhatsPowerArmor
+		}
+		available = {
+		}
+		x = 12
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = { advanced_laser_weaponry = 1}
+			
+		}
+}
+focus = {
+		id = UltimatePewPew
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheRealPewPew
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 12
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			set_technology = {  laser_tech_5 = 1}
+		}
+}
+
+
+focus = {
+		id = MrKnowItAll
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheSmartPeople
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 16
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			set_technology = { primitive_workshops = 1}
+		}
+}
+focus = {
+		id = WeKnowHowtoWrite
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = MrKnowItAll
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 16
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			set_technology = { traditional_instruction = 1}
+		}
+}
+focus = {
+		id = NowHeIsTellingUsHowToBuildStuff
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WeKnowHowtoWrite
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 16
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			set_technology = { clay_working = 1}
+		}
+}
+focus = {
+		id = WhyDoWeNeedRadios 
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = NowHeIsTellingUsHowToBuildStuff
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 16
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			set_technology = { radio = 1}
+		}
+}
+focus = {
+		id = WeKnowHowToBuildBikes
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhyDoWeNeedRadios
+		}
+		mutually_exclusive = {
+		focus = ARealBangBang
+		focus = MyGod
+		}
+		available = {
+		}
+		x = 16
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = { truck_tech_3 = 1}
+		}
+}
+		focus = {
+		id = KnowItAllIndeed
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WeKnowHowToBuildBikes
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 16
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			add_ideas = {mrknow_EHT}
+		}
+}
+focus = {
+		id = MyGod
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhyDoWeNeedRadios
+		}
+		mutually_exclusive = {
+		focus = ARealBangBang
+		focus = WeKnowHowToBuildBikes
+		}
+		available = {
+		}
+		x = 18
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = {flamer_tech_5 = 1}
+		}
+}
+focus = {
+		id = ForTheLoveOfMagnum
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = MyGod
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 18
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			add_ideas = {forthelove_EHT}
+		}
+}
+focus = {
+		id = ARealBangBang
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhyDoWeNeedRadios
+		}
+		mutually_exclusive = {
+		focus = WeKnowHowToBuildBikes
+		focus = MyGod
+		}
+		available = {
+		}
+		x = 20
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			set_technology = {advanced_ballistic_weaponry = 1}
+		}
+}
+
+focus = {
+		id = TheUltimateBang
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = ARealBangBang
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 20
+		y = 10
+		cost = 8.6
+		completion_reward = {
+			set_technology = {anti_personnel_tech_5 = 1}
+		}
+}
+#mil tech tree#
+focus = {
+		id = WhoWillLeadTheWararmy
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = the_eighties_path
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 24
+		y = 4
+		cost = 8.6
+		completion_reward = {
+		 add_stability = -0.15
+		}
+}
+focus = {
+		id = RedCharger
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhoWillLeadTheWararmy
+		}
+		mutually_exclusive = {
+			focus = WhiteNauvoo
+		}
+		available = {
+		}
+		x = 22
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			add_ideas = {redchr_EHT}
+			
+			create_corps_commander = {
+    name = "Red Charger"
+    portrait_path = "gfx/leaders/EHT/RedCharger.dds"
+    skill = 6
+    traits = {
+    }
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 6
+	}
+		}
+}
+focus = {
+		id = LightningFastWarraiders
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = RedCharger
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 22
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			add_ideas = {lfwr_EHT}
+		}
+}
+focus = {
+		id = 8CostCustoms
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = LightningFastWarraiders
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 22
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			577 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+		}}
+}}
+focus = {
+		id = MoreWarbikes
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = 8CostCustoms
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 22
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			577 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+		}
+		}
+}}
+focus = {
+		id = KingsOfTheHighways
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = MoreWarbikes
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 22
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			add_ideas ={koths_EHT}
+		}
+}
+focus = {
+		id = WhiteNauvoo
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhoWillLeadTheWararmy
+			}
+		mutually_exclusive = {
+			focus = RedCharger
+		}
+		available = {
+		}
+		x = 26
+		y = 5
+		cost = 8.6
+		completion_reward = {
+			add_ideas ={wnoo_EHT}
+					create_corps_commander = {
+    name = "White Nauvoo"
+    portrait_path = "gfx/leaders/EHT/WhiteNauvoo.dds"
+    skill = 6
+    traits = {
+    }
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	}
+		}
+}
+		focus = {
+		id = GodsWarcrusaders
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = WhiteNauvoo
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 26
+		y = 6
+		cost = 8.6
+		completion_reward = {
+			add_manpower = 2000
+		}
+}
+focus = {
+		id = TheFactoryOfGodsLove
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = GodsWarcrusaders
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 26
+		y = 7
+		cost = 8.6
+		completion_reward = {
+			577 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+		}
+		}
+		}
+}
+focus = {
+		id = MassConversion
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = TheFactoryOfGodsLove
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 26
+		y = 8
+		cost = 8.6
+		completion_reward = {
+			add_stability = 0.4
+		}
+}
+focus = {
+		id = KnightsOfThechurch
+		icon = GFX_goal_continuous_increase_nu 
+		prerequisite = {
+			focus = MassConversion
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		x = 26
+		y = 9
+		cost = 8.6
+		completion_reward = {
+			hidden_effect = { load_oob = knightsofthec }
+		}
+}
+
+}

@@ -1,0 +1,173 @@
+ideas = {
+ country = {
+		
+				 werememberourlegacy2 = {
+				
+				           picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						          army_speed_factor = 0.1}
+				                  equipment_bonus = {
+				    eighties_warbikes = {
+					build_cost_ic = -0.1
+					instant = yes
+								 }
+               }
+	}
+
+
+				startanew2 = {
+				
+						 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						stability_weekly = -0.01
+						justify_war_goal_time = -0.25
+						training_time_factor = -0.1
+						}
+						
+						}
+					
+						
+					salt_upon_wounds_EHT ={
+							
+						 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						special_forces_min = 8
+						non_core_manpower = 0.1
+						conscription_factor = 0.1
+						out_of_supply_factor = -0.2
+						}
+						
+						}
+					jeremiah_rigdon_EHT ={
+					
+							 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						conscription = 0.2
+						army_infantry_attack_factor = 0.1
+							army_infantry_defence_factor = 0.05
+							training_time_army_factor = -0.15
+							army_org_Factor = 0.05
+						}
+				}
+						
+					mrknow_EHT ={
+
+                picture = generic_morale_bonus
+
+                allowed ={
+                }
+
+                removal_cost= -1
+
+                equipment_bonus = {
+                    tank_equipment_1 = {
+                    build_cost_ic = -0.20
+                    instant = yes
+                    }
+               }
+            }
+        forthelove_EHT ={
+
+            picture = generic_morale_bonus
+
+            allowed ={
+            }
+
+            removal_cost= -1
+
+            equipment_bonus = {
+                power_armour_raider = {
+                build_cost_ic = -0.15
+                instant = yes
+                }
+            }
+        }
+						redchr_EHT ={
+					
+							 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						conscription = 0.05
+						army_infantry_attack_factor = 0.05
+					`	non_core_manpower = 0.1
+						experience_gain_army = 0.05
+						}
+					}
+						
+						
+							lfwr_EHT ={
+					
+							 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						army_speed_factor = 0.2
+						army_org_Factor = 0.1
+						}
+				}
+						
+						koths_EHT ={
+							 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						production_speed_infrastructure_factor = 0.3
+						}
+						}
+						wnoo_EHT = {
+							 picture = generic_morale_bonus
+						   
+						   allowed ={
+						   }
+						   
+						   removal_cost= -1
+						   
+					    Modifier = {
+						experience_gain_army = 0.1
+						planning_speed = 0.10
+						training_time_army_factor = -0.1
+						conscription = 0.1
+						
+						
+						}
+				}
+						
+						
+						}

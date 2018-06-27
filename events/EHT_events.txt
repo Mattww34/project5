@@ -1,0 +1,147 @@
+﻿add_namespace = EHT_events 
+
+country_event = {
+    id = EHT_events.1
+    title = EHT.0.t
+    desc = EHT.0.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.0.a
+    add_ideas = werememberourlegacy2
+	
+    }
+        option = {
+    name = EHT.0.b
+    add_ideas = startanew2
+ }
+		}
+		
+country_event = {
+    id = EHT_events.2
+    title = EHT.1.t
+    desc = EHT.1.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.1.a
+    add_resource = {type = metal amount= 10 state = 264}
+	add_resource = {type = fuel amount= 5 state = 264}
+	add_resource = {type = advanced_technology amount = 5 state = 264}
+	
+    }
+        option = {
+    name = EHT.1.b
+    add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = <EHT> }
+    add_equipment_to_stockpile = { type = anti_personnel_equipment_1 amount = 450 producer = <EHT> }
+	add_equipment_to_stockpile = { type =support_equipment amount = 250 producer = <EHT> }
+        
+ }
+		}
+		
+country_event = {
+    id = EHT_events.3
+    title = EHT.2.t
+    desc = EHT.2.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.2.a
+    213 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes}}
+				add_resource = {type = water amount= 10 state = 213}
+	            add_resource = {type = fuel amount= 5 state = 213}
+				add_stability = -0.15
+				add_war_support = -0.2
+	}
+        option = {
+    name = EHT.2.b
+    add_manpower = 1000
+	add_stability = 0.05
+	add_war_support = 0.05
+ }
+		}
+
+	country_event = {
+    id = EHT_events.4
+    title = EHT.3.t
+    desc = EHT.3.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.3.a
+    add_stability = -0.15
+	add_manpower = -1200
+	
+    }
+  
+		}		
+	country_event = {
+    id = EHT_events.5
+    title = EHT.4.t
+    desc = EHT.4.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.4.a
+	add_manpower = 1000
+	
+    }
+        option = {
+    name = EHT.4.b 
+	add_equipment_to_stockpile = { 
+				type = infantry_equipment_1
+				amount = 1000
+				producer = EHT		
+				}
+	 }		
+		}
+		
+	country_event = {
+    id = EHT_events.6
+    title = EHT.5.t
+    desc = EHT.5.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.5.a
+	add_manpower = 500
+	
+    }
+        option = {
+    name = EHT.5.b 
+	add_resource = {type = metal amount= 10 state = 270}
+	add_resource = {type = fuel amount= 5 state = 577}
+		}		
+			country_event = {
+    id = EHT_events.8
+    title = EHT.6.t
+    desc = EHT.6.d
+    picture = GFX_event_generic_settlement_1
+    is_triggered_only = yes
+
+        option = {
+    name = EHT.6.a
+	add_equipment_to_stockpile = { 
+				type = eighties_warbikes
+				amount = 1000
+				producer = EHT		
+				}
+	
+    }
+        option = {
+    name = EHT.6.b 
+	add_manpower = 500
+		
+		}	
+}	
